@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+    mariadb:
+        container_name: CBT_PROJECT
+        ports:
+            - '3307:3306'
+            # 3305 = mysql / 3306 docker
+        restart: always
+        volumes:
+            - ./mysqldata/conf.d:/etc/mysql/conf.d
+            - ./mysqldata/data:/var/lib/mysql
+            - ./mysqldata/initdb.d:/docker-entrypoint-initdb.d
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - TZ=Asia/Seoul
+        image: mariadb

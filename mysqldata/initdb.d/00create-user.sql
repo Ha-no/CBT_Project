@@ -1,0 +1,5 @@
+CREATE USER 'hanho'@'%' IDENTIFIED BY "hanho";
+
+GRANT ALL PRIVILEGES ON *.* TO 'hanho'@'%';
+
+FLUSH PRIVILEGES;

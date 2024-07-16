@@ -1,0 +1,38 @@
+<section>
+    <div>
+        <p><%= listquestion[0].qs_round %> 회차</p>
+    </div>
+
+    <div>
+        <% for( var i=0; i < listquestion.length; i++ ) { %>
+
+            <div>
+                <div>
+                    <p>
+                        <%= i+1 %>. <%= listquestion[i].qs_name %>
+                    </p>
+                </div>
+                
+                <% if( listquestion[i].qs_desc ) { %>
+                    <div>
+                        <p>
+                            DESC
+                        </p>
+                        <p>
+                            <%= listquestion[i].qs_desc %>
+                        </p>
+                    </div>
+                <% } %>
+                <div>
+                    <p>
+                        Answer
+                    </p>
+                    <p>
+                        <%= listquestion[i].qs_answer %>
+                    </p>
+                </div>
+                
+            </div>
+        <% } %>
+    </div>
+</section>
