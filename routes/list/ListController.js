@@ -4,11 +4,21 @@ const ListService = require('./ListService');
 
 router.get('/', async function (req, res, next) {
   try {
+    const result = await ListService.getList(24);
+
+    if (result) res.json(result);
+    else console.log('*EXPRESS* ListController Get Failed');
+  } catch (e) {
+    console.log(e);
+  }
+});
+
+router.get('/:round', async function (req, res, next) {
+  try {
     const result = await ListService.getList(req.params.round);
 
-    if (result)
-      res.render('index', { page: 'page/listquestion', listquestion: result });
-    else console.log('ListController Get Failed');
+    if (result) res.json(result);
+    else console.log('*EXPRESS* ListController Get Failed');
   } catch (e) {
     console.log(e);
   }

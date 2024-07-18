@@ -1,3 +1,3 @@
 const list = require('./ListController');
 
-module.exports = { path: '/list', cont: list };
+module.exports = { path: '/api/list', cont: list };

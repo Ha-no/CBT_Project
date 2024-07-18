@@ -9,16 +9,23 @@ var cors = require('cors');
 var Router = require('./routes/index');
 var app = express();
 var bodyParser = require('body-parser');
+var helmet = require('helmet');
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.use(cors());
+app.use(helmet());
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 Router.forEach((item) => {
   const { path, cont } = item;
