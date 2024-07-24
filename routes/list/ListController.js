@@ -17,7 +17,7 @@ router.get('/:round', async function (req, res, next) {
   try {
     const result = await ListService.getList(req.params.round);
 
-    if (result) res.json(result);
+    if (result) return res.json(result);
     else console.log('*EXPRESS* ListController Get Failed');
   } catch (e) {
     console.log(e);

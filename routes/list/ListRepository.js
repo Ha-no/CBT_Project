@@ -8,6 +8,8 @@ const ListRepository = {
       const conn = await db.getConnection();
       const [result] = await conn.query(query);
 
+      conn.release();
+
       if (result) return result;
       else console.log('Reposiroty getQuestionList Failed');
     } catch (e) {

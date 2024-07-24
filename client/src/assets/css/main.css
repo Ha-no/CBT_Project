@@ -414,7 +414,8 @@ a.boxed-btn {
   display: inline-block;
   background-color: #F28123;
   color: #fff;
-  padding: 10px 20px;
+  padding: 0.5% 3%;
+  font-size: 1.2rem;
 }
 
 a.bordered-btn {
@@ -494,13 +495,12 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 }
 
 .breadcrumb-section {
-  padding: 0.5% 0;
+  padding: 2% 0;
   background-size: cover;
   background-position: center center;
   position: relative;
   z-index: 1;
   background-attachment: fixed;
-  padding-top: 4%;
 }
 
 .breadcrumb-section:after {
@@ -525,7 +525,8 @@ ul.navbar-nav li.nav-item a.nav-link, ul.navbar-nav li.nav-item.active a.nav-lin
 }
 
 .top-header-area {
-  position: absolute;
+  /* position: absolute; */
+  background-color: #051922;
   z-index: 999;
   width: 100%;
   padding: 25px 0;
@@ -1377,7 +1378,6 @@ a.mobile-show.search-bar-icon:hover {
 }
 
 .hero-area {
-  height: 100%;
   position: relative;
   z-index: 1;
 }
@@ -2653,7 +2653,7 @@ tr.total-data td strong {
 }
 
 .billing-address-form {
-  padding: 20px;
+  padding: 2%
 }
 
 .billing-address-form form p input {
@@ -2676,7 +2676,7 @@ tr.total-data td strong {
   margin: 0;
 }
 
-.card.single-accordion .card-header h5 button:before {
+/* .card.single-accordion .card-header h5 button:before {
   position: absolute;
   left: 20px;
   top: 50%;
@@ -2686,7 +2686,7 @@ tr.total-data td strong {
   line-height: 22px;
   margin-top: -11px;
   color: #F28123;
-}
+} */
 
 .billing-address-form form p:last-child {
   margin-bottom: 0;

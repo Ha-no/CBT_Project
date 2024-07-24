@@ -1,0 +1,12 @@
+{
+    "apps": [
+        {
+            "name": "Hanho-CBT",
+            "script": "node ./bin/www",
+            "env": {
+                "Node_ENV": "production",
+                "PORT": 3645
+            }
+        }
+    ]
+}

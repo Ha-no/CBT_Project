@@ -5,11 +5,11 @@ const sql = {
   QuestionList: (info) => {
     return `
       SELECT
-        qs_id, qs_round, qs_name, qs_desc, qs_answer
+        qs_id, qs_round, qs_name, qs_desc, qs_answer, qs_sub
       FROM
         t_question
       WHERE
-        ( qs_round = 24 )
+        ( qs_round = ${info} )
     `;
   },
 };

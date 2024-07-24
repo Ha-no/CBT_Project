@@ -3,3 +3,137 @@
     flex: 0 0 100%;
     max-width: 100%;
 }
+
+.min-h-300 {
+    min-height: 300px;
+}
+
+.nav-section {
+    height: 5%;
+    padding: 0.5% 0;
+    background-color: #051922;
+    width: 100%;
+}
+
+.main-section {
+    height: 90%;
+}
+
+.copy-section {
+    height: 5%;
+    background-color: #051922;
+    border-top: 1px solid #232a35;
+}
+
+.btn-cursor-def {
+    cursor: default;
+}
+
+.btn-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1%
+}
+
+.answer-div {
+    margin-bottom: 1%;
+    padding: 0 1.15rem 0 1.15rem;
+}
+
+.answer-textarea-div {
+    padding: 0 2% 2% 2% !important;
+}
+
+.test {
+    width: 100;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    resize: none;
+}
+
+.btn1 {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    color: #fff !important;
+    padding: 0.5% 3%;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: #007bff;
+}
+
+.btn1:hover {
+  background-color: #051922;
+  color: #F28123;
+}
+
+.answer-div-pd {
+    padding: 3% 0% 2% 0%
+}
+
+.answer-textarea-p {
+    padding-top: 2% !important;
+    
+}
+
+.answer-textarea {
+    resize: none;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    height: 150px;
+}
+
+.left-btn {
+    margin-right: 1%;
+}
+
+.right-btn {
+    margin-left: 1%;
+}
+
+.desc-div {
+    padding: 1% 2% 0% 2%;
+}
+
+.pd-none-btm {
+    padding: 1.25rem 1.25rem 0 1.25rem !important;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.wth-20 {
+    width: 20%;
+}
+
+.answer-text {
+    margin-top: 2% !important;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    resize: none;;
+}
+
+.main-start-btn {
+    border-radius: 8px !important;
+    padding: 1.2% 4% !important ;
+}
+
+.submit-btn {
+    background-color: #ffc107 !important;
+    color: #555 !important;
+}
+
+.layout-flex {
+    display: flex;
+    justify-content: space-around;
+}

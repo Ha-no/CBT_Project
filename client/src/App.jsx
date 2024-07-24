@@ -5,11 +5,6 @@ import IndexRouter from './route';
 const App = () => {
   const location = useLocation();
 
-  // 접속 주소 확인
-  // useEffect(() => {
-  //   console.log('*REACT* LOCATION : ', window.location.pathname);
-  // }, [location]);
-
   return (
     <>
       <IndexRouter />

@@ -24,8 +24,8 @@ CREATE TABLE IF NOT EXISTS `cbt`.`t_question` (
   `qs_id` VARCHAR(45) NOT NULL,
   `qs_round` INT NOT NULL,
   `qs_name` VARCHAR(300) NOT NULL,
-  `qs_desc` VARCHAR(500) NULL,
-  `qs_answer` VARCHAR(500) NULL,
+  `qs_desc` VARCHAR(2000) NULL,
+  `qs_answer` VARCHAR(2000) NULL,
   `qs_sub` BOOLEAN NOT NULL,
   PRIMARY KEY (`qs_id`))
 ENGINE = InnoDB;
