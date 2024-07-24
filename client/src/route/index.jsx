@@ -9,8 +9,12 @@ const IndexRouter = () => {
     <Routes>
       <Route path="/" element={<QuestionLayout />}>
         <Route index element={<Main />} />
-        <Route path="/list/:round" element={<List />} />
       </Route>
+      <Route path="/list" element={<List />}>
+        <Route index element={<List />} />
+        <Route path="/:round" element={<List />} />
+      </Route>
+      <Route path="*" element={<Main/>} />
     </Routes>
   );
 };
