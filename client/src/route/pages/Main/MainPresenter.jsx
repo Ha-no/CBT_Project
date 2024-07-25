@@ -7,7 +7,7 @@ import Select from '@mui/material/Select';
 import { Link } from 'react-router-dom';
 
 const MainPresenter = (props) => {
-  const { round, setRound } = props;
+  const { round, setRound, startCbt } = props;
 
   return (
     <>
@@ -54,16 +54,12 @@ const MainPresenter = (props) => {
                           <MenuItem value="15">15 회차</MenuItem>
                         </Select>
                       </FormControl>
-
-                      <Link className="main-start-btn boxed-btn" to={`/list/${round}`}>
+                        <div className="main-start-btn boxed-btn cursor-pointer" onClick={startCbt}>
+                          시작
+                        </div>
+                      {/* <Link className="main-start-btn boxed-btn" to={`/list/${round}`}>
                         시작
-                        </Link>
-                      {/* <a
-                        href={`/list/${round}`}
-                        className="main-start-btn boxed-btn"
-                      >
-                        시작
-                      </a> */}
+                        </Link> */}
                     </div>
                   </div>
                 </div>
