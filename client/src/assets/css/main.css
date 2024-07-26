@@ -409,13 +409,17 @@ p:last-child {
   background-color: #162133;
 }
 
-a.boxed-btn {
+.boxed-btn {
   font-family: 'Poppins', sans-serif;
   display: inline-block;
   background-color: #F28123;
   color: #fff;
   padding: 0.5% 3%;
   font-size: 1.2rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 a.bordered-btn {
